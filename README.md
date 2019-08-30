@@ -1,6 +1,6 @@
 # chunky-promise
 
-`chunky-promise` offers the ability to split up operations/function calls over data into chunks. For example, this is very useful if you need to make network/api requests for each entry in a large data set. This **can** be used to synchronous operations, but do keep in mind that `chunky-promise` does return a `Promise` object.
+`chunky-promise` offers the ability to split up operations/function calls over data into chunks. For example, this is very useful if you need to make network/api requests for each entry in a large data set. This **can** be used to perform synchronous operations, but do keep in mind that `chunky-promise` does return a `Promise` object.
 
 ## Installation
 

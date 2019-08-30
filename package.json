@@ -1,6 +1,6 @@
 {
     "name": "@fizzygalacticus/chunky-promise",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Operate on arrays of data asynchronously and in chunks!",
     "main": "index.js",
     "repository": "https://github.com/FizzyGalacticus/chunky-promise",
@@ -10,6 +10,11 @@
         "test": "mocha tests",
         "lint": "eslint ."
     },
+    "keywords": [
+        "chunk",
+        "promise",
+        "util"
+    ],
     "private": false,
     "devDependencies": {
         "assert": "^2.0.0",
