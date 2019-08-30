@@ -1,0 +1,30 @@
+{
+    "name": "@fizzygalacticus/chunky-promise",
+    "version": "1.0.0",
+    "description": "Operate on arrays of data asynchronously and in chunks!",
+    "main": "index.js",
+    "repository": "https://github.com/FizzyGalacticus/chunky-promise",
+    "author": "Dustin L. Dodson",
+    "license": "MIT",
+    "scripts": {
+        "test": "mocha tests",
+        "lint": "eslint ."
+    },
+    "private": false,
+    "devDependencies": {
+        "assert": "^2.0.0",
+        "eslint": "^6.2.2",
+        "eslint-plugin-prettier": "^3.1.0",
+        "husky": "^3.0.4",
+        "mocha": "^6.2.0",
+        "prettier": "^1.18.2"
+    },
+    "eslintIgnore": [
+        "**/node_modules"
+    ],
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint && npm run test"
+        }
+    }
+}
