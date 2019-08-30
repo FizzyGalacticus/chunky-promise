@@ -77,4 +77,21 @@ describe('chunky-promise', () => {
             res.forEach((val, idx) => assert.ok(val === (idx + 1) * 2));
         }
     });
+
+    it('should handle well when chunk size is <= 0', async () => {
+        for (let i = -100; i <= 0; i += 5) {
+            const arrSize = i + 200;
+            const arr = createArrayOfSize(arrSize);
+            const op = val => val;
+
+            let handlerCalls = 0;
+
+            await chunkyPromise(arr, i, op, vals => {
+                assert.ok(vals.length === arrSize);
+                handlerCalls++;
+            });
+
+            assert.ok(handlerCalls === 1);
+        }
+    });
 });

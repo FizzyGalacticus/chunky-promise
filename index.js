@@ -1,7 +1,7 @@
 'use strict';
 
 const chunk = (arr = [], size) => {
-    if (!size) {
+    if (!size || size <= 0) {
         return [arr];
     }
 
